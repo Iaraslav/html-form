@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Form</title>
+<body>
+
+<form action="/action_page.php">
+ <fieldset style="width:500px">
+  <legend>Contact information:</legend>
+  <table>   
+       <tr>
+           <td>
+               <label for="fname">First name:</label>
+           </td>
+           <td  style="padding-left:10px;">
+               <input type="text" id="fname" name="fname" placeholder="First name">
+           </td>
+            <td>
+              Preferred contact method:
+            </td>
+       </tr>
+       <tr>
+           <td>
+               <label for="lname">Last name:</label>
+           </td>
+           <td  style="padding-left:10px;">
+               <input type="text" id="lname" name="lname" placeholder="Last name">
+           </td>
+           <td>
+             <input type="checkbox" id="contact1" name="contact1" value="contactemail">
+             <label for="contact1"> Email</label><br>
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <label for="email">Email:</label>
+           </td>
+           <td  style="padding-left:10px;">
+               <input type="text" id="email" name="email" placeholder="Email">
+           </td>
+           <td>
+             <input type="checkbox" id="contact2" name="contact2" value="contactphone">
+             <label for="contact2"> Telephone</label><br>
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <label for="tel">Telephone:</label>
+           </td>
+           <td  style="padding-left:10px;">
+               <input type="text" id="tel" name="tel" placeholder="Telephone">
+           </td>
+       </tr>
+  </table>
+ </fieldset>
+ <fieldset style="width:500px">
+  <legend>Feedback:</legend>
+  <table>   
+       <tr>
+           <td>
+               <label for="subj">Message subject:</label>
+           </td>
+           <td  style="padding-left:10px;">
+               <input type="text" id="subj" name="subj">
+           </td>
+       </tr>
+  </table>
+  <textarea id="message" name="message" rows="15" cols="65"></textarea>
+  <label for="myfile">Attach a file:</label>
+  <input type="file"  id="myfile" name="myfile">
+  <hr style="height:2px;; border-width:0; background-color:grey">
+  <input type="submit" value="Send">
+  </fieldset>
+</form>
+
+</body>
+</html>
